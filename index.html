@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Token Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="checker.js"></script>
+</head>
+<body>
+
+    <header>
+      <div class="nav-bar">
+            <div class="left">
+                <a href="#"><li class="logo">TOKEN CHECKER</li></a>
+            </div>
+            <div class="nav_links right">                
+                <li class="nav-btn"><a target="_blank" href="https://github.com/KanekiWeb">SOURCE</a></li>
+                <li class="nav-btn"><a target="_blank" href="https://youtube.com/Avuxx">YOUTUBE</a></li>
+                <li class="nav-btn"><a target="_blank" href="https://azazel.ga/discord">DISCORD</a></li>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-page">
+        <div class="token-area">
+            <textarea class="tokens" name="tokens" id="tokens" cols="70" rows="20" placeholder="Enter Your Discord Token Here"></textarea>
+        </div>
+        <div class="button">
+            <button onclick="checker()">START CHECKER</button>
+        </div>
+
+        <div class="results">
+            <div class="valid results-box">
+                <div class="title"><i class="fas fa-check-circle"></i> Valid Tokens <a class="checked-count-valid" id="valid-count">0</a></div>
+                <div id="valid-tokens" class="body">
+                </div>
+            </div>
+
+            <div class="invalid results-box">
+                <div class="title"><i class="fas fa-times-circle"></i> Invalid Tokens <a class="checked-count-invalid" id="invalid-count">0</a></div>
+                <div id="invalid-tokens" class="body">
+                </div>
+            </div>
+
+            <div class="unknow results-box">
+                <div class="title"><i class="fas fa-times-circle"></i> Unknown Tokens <a class="checked-count-unknow" id="unknow-count">0</a></div>
+                <div id="unknow-tokens" class="body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
